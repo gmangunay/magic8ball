@@ -37,3 +37,17 @@ function results(){
     const result = getRandomResponse(responses);
     console.log(result); 
 }
+
+const input = document.getElementById("input");
+//event listener activates function when pressing enter
+input.addEventListener("keydown", function(e) {
+    //checks if key "Enter" is pressed.
+    if(e.code === "Enter"){
+     results();
+    }
+});
+
+//look into DOM slides
+//document.getelement reads html
+//.innerHTML changes value 
+//.createElement adds new elements
