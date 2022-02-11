@@ -21,13 +21,14 @@ const responses = [
 	"Outlook not so good",
 	"Very doubtful",
 ];
-//Function for finding random index in an array
-function getRandomResponse(arr){
 
+
+//Function for finding random index in an array
+function getRandomResponse(array){
     // get random index value
-    const random = Math.floor(Math.random() * arr.length);
+    const random = Math.floor(Math.random() * array.length);
     // get random response
-    const response = arr[random];
+    const response = array[random];
     return response;
 }
 //Function for return random index of responses[]
@@ -36,20 +37,25 @@ function results(){
     const result = getRandomResponse(responses);
     //this displays the result
     document.getElementById("displayResults").innerHTML = result;
+    //monitoring results
     console.log(result); 
 }
 
-const input = document.getElementById("input");
+function validation(){
+    const result = getRandomResponse(error);
+    document.getElementById("showError").innerHTML = result;
+    console.log(result); 
+}
+
+
 //event listener activates function when pressing enter
-input.addEventListener("keydown", function(e) {
+const input = document.getElementById("form12");
+
+input.addEventListener("keydown", function(execute) {
     //checks if key "Enter" is pressed.
-    if(e.code === "Enter"){
+    if(execute.code === "Enter"){
      results();
     }
 });
 
 
-//look into DOM slides
-//document.getelement reads html
-//.innerHTML changes value 
-//.createElement adds new elements
