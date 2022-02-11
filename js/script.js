@@ -54,7 +54,7 @@ const input = document.getElementById("form12");
 input.addEventListener("keydown", function(execute) {
     //checks if key "Enter" is pressed.
     if(execute.code === "Enter"){
-     results();
+        results();
     }
 });
 
