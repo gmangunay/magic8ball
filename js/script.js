@@ -26,15 +26,16 @@ function getRandomResponse(arr){
 
     // get random index value
     const random = Math.floor(Math.random() * arr.length);
-
     // get random response
     const response = arr[random];
-
     return response;
 }
 //Function for return random index of responses[]
 function results(){
+    //call getRandomResponse function which generates random response
     const result = getRandomResponse(responses);
+    //this displays the result
+    document.getElementById("displayResults").innerHTML = result;
     console.log(result); 
 }
 
@@ -46,6 +47,7 @@ input.addEventListener("keydown", function(e) {
      results();
     }
 });
+
 
 //look into DOM slides
 //document.getelement reads html
