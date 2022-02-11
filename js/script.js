@@ -47,7 +47,7 @@ function validation(){
     console.log(result); 
 }
 
-
+//testing
 //event listener activates function when pressing enter
 const input = document.getElementById("form12");
 
