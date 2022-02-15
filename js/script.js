@@ -41,20 +41,13 @@ function results(){
     console.log(result); 
 }
 
-function validation(){
-    const result = getRandomResponse(error);
-    document.getElementById("showError").innerHTML = result;
-    console.log(result); 
-}
-
-//testing
 //event listener activates function when pressing enter
-const input = document.getElementById("form12");
-
+const input = document.getElementById("input");
 input.addEventListener("keydown", function(execute) {
+
     //checks if key "Enter" is pressed.
     if(execute.code === "Enter"){
-        results();
+            results();
     }
 });
 
